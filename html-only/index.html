@@ -1,0 +1,102 @@
+<!-- Anael Pontes
+Minicurso HTML/CSS Asa Norte -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Site</title>
+	</head>
+
+	<body>
+		<header>
+			<h1><center>Bem-vindo a mais um site aleatório da Internet!</center></h1>
+		</header>
+
+		<main>
+		<hr>
+		<div class="principal">
+			<h2><center>*** Sobre ***</center></h2>
+	 
+			<p><center>Este é um site construído apenas com <strong>&lt;HTML&gt;</strong>!</center></p>
+
+			<p><center><em>(Bonitão ele não vai ser, mas a gente se esforça.)</em></center></p>
+
+			<p><center>OBS: É sempre importante ser atento quanto a acessibilidade em websites pela internet, para ajudar as pessoas que utilizam da tecnologia de leitura de tela.</center></p>
+		
+			<p><center>E pelo menos para esse ponto, o CSS não faz <em>tanta</em> diferença!</center></p>
+		</div>
+
+		<hr>
+		<div align="center">
+			<h2><center>*** Benefícios ***</center></h2>
+			<ul>
+				<li type="none">Mais facil de fazer.</li>
+				<li type="none">...</li>
+				<li type="none">...</li>
+				<li type="none">Só isso mesmo.</li>
+			</ul>
+		</div>
+
+		<hr>
+		<div  align="center">
+			<h2><center>*** Formulário ***</center></h2>
+			<form>
+				<h3>Preencha seus dados e envie para concorrer a prêmios incríveis!</h3>
+				<label for="nome">Nome</label>
+				<input type="text" id="nome"required>
+				<br>
+				<br>
+				<label for="email">Email</label>
+				<input type="email" id="email" required placeholder="seuemail@dominio.com">
+				<br>
+				<br>
+				<label for="Número do cartão">Cartão</label>
+				<input type="tel" id="cartao" required placeholder="XXXX-XXXX-XXXX-XXXX">
+				<p>(É brincadeira, tá? Não coloque seu número do cartão de verdade plmdds.)</p>
+				<p>Digite uma mensagem qualquer, caso queira :D</p>
+				<label for="mensagem">Mensagem</label>
+				<br>
+				<textarea cols="70" rows="10" required></textarea>
+
+				<fieldset align="center">
+					<legend style="display: inline-block; padding: 10px;">Com qual gênero você se identifica?</legend>
+					<label for="radio-masc"><input type="radio" name="genero" value="masc" id="radio-masc"> Masculino</label>
+					<label for="radio-fem"><input type="radio" name="genero" value="fem" id="radio-fem"> Feminino</label>
+					<label for="radio-none"><input type="radio" name="genero" value="none" id="radio-none" checked> Outro</label>
+				</fieldset>
+				<br>
+				<fieldset align="center">
+					<legend>Você é um ser diurno ou noturno?</legend>
+					<br>
+					<select>
+						<option>Diurno</option>
+						<option>Noturno</option>
+					</select>
+				</fieldset>
+
+				<br>
+				<br>
+				<label class="checkbox"><input type="checkbox" checked>Isso foi legal?</label>
+				<br>
+				<br>
+				<hr>
+				<br>
+				<input type="submit" value="Enviar formulário" class="enviar">
+				<br>
+				<br>
+			</form>
+			<hr>
+		</div>
+	</main>
+
+		<footer>
+			<br>
+			<br>
+			<br>
+			<br>
+		<center><p style="font-size: 12px">&copy; No Copyright</p></center>
+		</footer>
+	</body>
+</html>
