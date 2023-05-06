@@ -1,3 +1,3 @@
 ### HTML Map and List 
 
-👉 Click here to access the pages: https://naelitoh.github.io/site-teste/planetas/index.html
+👉 Click [here](https://naelitoh.github.io/site-teste/planetas/index.html) to access the pages.
