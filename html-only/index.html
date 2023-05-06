@@ -6,97 +6,115 @@ Minicurso HTML/CSS Asa Norte -->
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Site</title>
+		<title>Site sem CSS</title>
+		<style>
+			.botao-voltar {
+				display: inline-block;
+				text-decoration: none;
+				padding: 8px 16px;
+				background-color: #DDDDDD;
+				border: none;
+				border-radius: 4px;
+				font-weight: bold;
+				color: #000000;
+			}        
+		</style>
 	</head>
 
 	<body>
 		<header>
-			<h1><center>Bem-vindo a mais um site aleatório da Internet!</center></h1>
-		</header>
-
-		<main>
-		<hr>
-		<div class="principal">
-			<h2><center>*** Sobre ***</center></h2>
-	 
-			<p><center>Este é um site construído apenas com <strong>&lt;HTML&gt;</strong>!</center></p>
-
-			<p><center><em>(Bonitão ele não vai ser, mas a gente se esforça.)</em></center></p>
-
-			<p><center>OBS: É sempre importante ser atento quanto a acessibilidade em websites pela internet, para ajudar as pessoas que utilizam da tecnologia de leitura de tela.</center></p>
-		
-			<p><center>E pelo menos para esse ponto, o CSS não faz <em>tanta</em> diferença!</center></p>
-		</div>
-
-		<hr>
-		<div align="center">
-			<h2><center>*** Benefícios ***</center></h2>
-			<ul>
-				<li type="none">Mais facil de fazer.</li>
-				<li type="none">...</li>
-				<li type="none">...</li>
-				<li type="none">Só isso mesmo.</li>
-			</ul>
-		</div>
-
-		<hr>
-		<div  align="center">
-			<h2><center>*** Formulário ***</center></h2>
-			<form>
-				<h3>Preencha seus dados e envie para concorrer a prêmios incríveis!</h3>
-				<label for="nome">Nome</label>
-				<input type="text" id="nome"required>
-				<br>
-				<br>
-				<label for="email">Email</label>
-				<input type="email" id="email" required placeholder="seuemail@dominio.com">
-				<br>
-				<br>
-				<label for="Número do cartão">Cartão</label>
-				<input type="tel" id="cartao" required placeholder="XXXX-XXXX-XXXX-XXXX">
-				<p>(É brincadeira, tá? Não coloque seu número do cartão de verdade plmdds.)</p>
-				<p>Digite uma mensagem qualquer, caso queira :D</p>
-				<label for="mensagem">Mensagem</label>
-				<br>
-				<textarea cols="70" rows="10" required></textarea>
-
-				<fieldset align="center">
-					<legend style="display: inline-block; padding: 10px;">Com qual gênero você se identifica?</legend>
-					<label for="radio-masc"><input type="radio" name="genero" value="masc" id="radio-masc"> Masculino</label>
-					<label for="radio-fem"><input type="radio" name="genero" value="fem" id="radio-fem"> Feminino</label>
-					<label for="radio-none"><input type="radio" name="genero" value="none" id="radio-none" checked> Outro</label>
-				</fieldset>
-				<br>
-				<fieldset align="center">
-					<legend>Você é um ser diurno ou noturno?</legend>
-					<br>
-					<select>
-						<option>Diurno</option>
-						<option>Noturno</option>
-					</select>
-				</fieldset>
-
-				<br>
-				<br>
-				<label class="checkbox"><input type="checkbox" checked>Isso foi legal?</label>
-				<br>
-				<br>
-				<hr>
-				<br>
-				<input type="submit" value="Enviar formulário" class="enviar">
-				<br>
-				<br>
-			</form>
+			<center><p><h5>Outros sites:</h5></p></center>
+			<center><h5><a href="/html-only/index.html">Site sem CSS</a></h5></center>
+			<center><h5><a href="/site-teste/index.html">Site dos planetas</a></h5></center>
 			<hr>
-		</div>
-	</main>
+		</header>
+		<main>
+			<br>
+			<h1><center>Bem-vindo a mais um site aleatório da Internet!</center></h1>
+			<hr>
+			<div class="principal">
+				<h2><center>*** Sobre ***</center></h2>
+		
+				<p><center>Este é um site construído apenas com <strong>&lt;HTML&gt;</strong>!</center></p>
 
+				<p><center><em>(Bonitão ele não vai ser, mas a gente se esforça.)</em></center></p>
+
+				<p><center>OBS: É sempre importante ser atento quanto a acessibilidade em websites pela internet, para ajudar as pessoas que utilizam da tecnologia de leitura de tela.</center></p>
+			
+				<p><center>E pelo menos para esse ponto, o CSS não faz <em>tanta</em> diferença!</center></p>
+			</div>
+
+			<hr>
+			<div align="center">
+				<h2><center>*** Benefícios ***</center></h2>
+				<ul>
+					<li type="none">Mais facil de fazer.</li>
+					<li type="none">...</li>
+					<li type="none">...</li>
+					<li type="none">Só isso mesmo.</li>
+				</ul>
+			</div>
+
+			<hr>
+			<div  align="center">
+				<h2><center>*** Formulário ***</center></h2>
+				<form>
+					<h3>Preencha seus dados e envie para concorrer a prêmios incríveis!</h3>
+					<label for="nome">Nome</label>
+					<input type="text" id="nome"required>
+					<br>
+					<br>
+					<label for="email">Email</label>
+					<input type="email" id="email" required placeholder="seuemail@dominio.com">
+					<br>
+					<br>
+					<label for="Número do cartão">Cartão</label>
+					<input type="tel" id="cartao" required placeholder="XXXX-XXXX-XXXX-XXXX">
+					<p>(É brincadeira, tá? Não coloque seu número do cartão de verdade plmdds.)</p>
+					<p>Digite uma mensagem qualquer, caso queira :D</p>
+					<label for="mensagem">Mensagem</label>
+					<br>
+					<textarea cols="70" rows="10" required></textarea>
+
+					<fieldset align="center">
+						<legend style="display: inline-block; padding: 10px;">Com qual gênero você se identifica?</legend>
+						<label for="radio-masc"><input type="radio" name="genero" value="masc" id="radio-masc"> Masculino</label>
+						<label for="radio-fem"><input type="radio" name="genero" value="fem" id="radio-fem"> Feminino</label>
+						<label for="radio-none"><input type="radio" name="genero" value="none" id="radio-none" checked> Outro</label>
+					</fieldset>
+					<br>
+					<fieldset align="center">
+						<legend>Você é um ser diurno ou noturno?</legend>
+						<br>
+						<select>
+							<option>Diurno</option>
+							<option>Noturno</option>
+						</select>
+					</fieldset>
+
+					<br>
+					<br>
+					<label class="checkbox"><input type="checkbox" checked>Isso foi legal?</label>
+					<br>
+					<br>
+					<hr>
+					<br>
+					<input type="submit" value="Enviar formulário" class="enviar">
+					<br>
+					<br>
+				</form>
+			</div>
+			<br>
+			<br>
+			<br>
+			<section id="voltar">
+				<center><a href="javascript:history.back()" class="botao-voltar">Voltar</a></center>
+			</section>
+		</main>
 		<footer>
+			<hr>
 			<br>
-			<br>
-			<br>
-			<br>
-		<center><p style="font-size: 12px">&copy; No Copyright</p></center>
+		<center><h5>&copy; No Copyright</h5></center>
 		</footer>
 	</body>
 </html>
