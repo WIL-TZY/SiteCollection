@@ -1,0 +1,173 @@
+<!-- Anael Pontes
+Minicurso HTML/CSS Asa Norte -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Site feito para fins de estudo - Minicurso HTML/CSS">
+    <link rel="stylesheet" href="/html-and-css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Site com CSS</title>
+  </head>
+
+  <body>
+    <header>
+      <h5 class="titulo-centralizado">Outros sites:</h5>
+      <nav class="nav-centralizado">
+        <ul>
+          <li>
+            <a href="/site-teste/html-only/index.html">Site sem CSS</a>
+          </li>
+
+          <li>
+            <a href="/site-teste/html-and-css/index.html">Site com CSS</a>
+          </li>
+
+		  <li>
+            <a href="/site-teste/planetas/index.html">Site dos planetas</a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="hr" />
+    </header>
+    <main>
+      <h1 class="titulo-centralizado">
+        Bem-vindo a mais um site aleatório da Internet!
+      </h1>
+      <hr class="hr" />
+      <div class="conteudo1">
+        <h2 id="titulo" class="titulo-centralizado"> Sobre </h2>
+
+        <div class="texto-centralizado">
+          <p>
+            Este site agora foi embelezado com o poder do <strong>CSS</strong>!
+          </p>
+        </div>
+
+        <div class="texto-centralizado">
+          <p>
+            OBS: É sempre importante ser atento quanto a acessibilidade em
+            websites pela internet, para ajudar as pessoas que utilizam da
+            tecnologia de leitura de tela.
+          </p>
+        </div>
+
+        <div class="texto-centralizado">
+          <p>
+            E pelo menos para esse ponto, o CSS não faz
+            <em>tanta</em> diferença!
+          </p>
+        </div>
+      </div>
+
+      <hr class="hr" />
+      <div class="conteudo2">
+        <h2 id="titulo" class="titulo-centralizado"> Benefícios do CSS</h2>
+        <ul class="lista-centralizada">
+          <li class="lista">Mais bonito.</li>
+          <li class="lista">Mais interessante.</li>
+          <li class="lista">
+            Estratégias avançadas para atrair a atenção do usuário.
+          </li>
+        </ul>
+      </div>
+      <hr class="hr" />
+
+      <!-- FORMULÁRIO -->
+      <h2 id="titulo" class="titulo-centralizado"> Formulário </h2>
+      <div class="form-container">
+        <form class="form">
+          <h3>
+            Preencha seus dados e envie para concorrer a prêmios incríveis!
+          </h3>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              required
+              placeholder="Fulano De Tal"
+              class="input-padrao"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="seuemail@dominio.com"
+              class="input-padrao"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Número do cartão">Cartão</label>
+            <input
+              type="tel"
+              id="cartao"
+              required
+              placeholder="XXXX-XXXX-XXXX-XXXX"
+              class="input-padrao"
+            />
+          </div>
+          <p>(É só brincadeira, tá?)</p>
+          <p>Não coloque seu número do cartão de verdade</p>
+
+          <label for="mensagem" id="mensagem">Mensagem</label>
+		  <p>Digite uma mensagem qualquer, caso queira :D</p>
+          <textarea cols="70" rows="5" required class="input-padrao"></textarea>
+
+          <fieldset class="fieldset1">
+            <legend style="display: inline-block; padding: 10px">
+              Com qual gênero você se identifica?
+            </legend>
+            <label for="radio-masc"
+              ><input type="radio" name="genero" value="masc" id="radio-masc" />
+              Masculino</label
+            >
+            <label for="radio-fem"
+              ><input type="radio" name="genero" value="fem" id="radio-fem" />
+              Feminino</label
+            >
+            <label for="radio-none"
+              ><input
+                type="radio"
+                name="genero"
+                value="none"
+                id="radio-none"
+                checked
+              />
+              Outro</label
+            >
+          </fieldset>
+
+          <fieldset class="fieldset2">
+            <legend>Você é um ser diurno ou noturno?</legend>
+            <select>
+              <option>Diurno</option>
+              <option>Noturno</option>
+            </select>
+          </fieldset>
+          <label class="checkbox"
+            ><input type="checkbox" checked />Isso foi legal?</label
+          >
+          <input type="submit" value="Enviar formulário" class="enviar" />
+        </form>
+      </div>
+      <section id="voltar">
+        <a href="javascript:history.back()" class="botao-voltar">Voltar</a>
+      </section>
+    </main>
+    <footer>
+      <hr class="hr" />
+      <h5 class="texto-centralizado">&copy; No Copyright</h5>
+    </footer>
+  </body>
+</html>
