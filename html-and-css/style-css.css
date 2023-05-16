@@ -16,7 +16,6 @@ header {
   text-align: center;
 }
 
-
 /* Centralizando o texto em cada item da lista */
 .nav-centralizado {
   display: flex;
@@ -24,14 +23,14 @@ header {
 }
 
 .nav-centralizado ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-centralizado li {
-    margin: 0 10px;
-  }
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-centralizado li {
+  margin: 0 10px;
+}
 
 a {
   font-size: 14px;
@@ -113,15 +112,15 @@ h2 {
 }
 
 #titulo {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 #titulo:before {
-	content: "🟊🟊🟊";
+  content: "🟊🟊🟊";
 }
 
 #titulo:after {
-	content: "🟊🟊🟊";
+  content: "🟊🟊🟊";
 }
 
 .form-group {
@@ -140,10 +139,31 @@ h2 {
 
 .input-padrao {
   display: block;
+  border: 1px solid #705cff;
+  border-radius: 15px;
+  color: #c9b8e0;
+  background-color: #221633;
+  caret-color: #221633;
   margin: 0 0 20px;
   padding: 5px 25px;
   width: 80%;
   font-size: 16px;
+  text-align: center;
+}
+
+textarea.input-padrao {
+  text-align: left;
+}
+
+.input-padrao::placeholder {
+  text-align: center;
+  color: #705cff;
+  font-style: italic;
+}
+
+textarea {
+  color: #c9b8e0;
+  background-color: #221633;
 }
 
 textarea.input-padrao {
@@ -152,6 +172,7 @@ textarea.input-padrao {
 }
 
 .checkbox {
+  background-color: #221633;
   margin: 20px 0;
   font-size: 18px;
   cursor: pointer;
@@ -167,9 +188,10 @@ textarea.input-padrao {
 .enviar {
   width: 40%;
   padding: 15px 0;
-  background: #c9b8e0;
-  color: white;
+  background: #221633;
+  color: #c9b8e0;
   font-weight: bold;
+  margin: 1em;
   font-size: 18px;
   border: none;
   border-radius: 25px;
@@ -187,7 +209,7 @@ fieldset {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid #333;
+  border: 2px solid #221633;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 2em;
@@ -210,13 +232,53 @@ fieldset {
 }
 
 .fieldset2 select {
-  background-color: #ffffff;
+  background-color: #221633;
+  color: #c9b8e0;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.conteudo-cursor {
+  position: relative;
+}
+
+.conteudo-cursor::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  left: 6em;
+  transform: translateY(-50%);
+  color: #c9b8e0;
+}
+
+.conteudo-cursor select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #221633;
+  color: #c9b8e0;
   border: none;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
+
+.conteudo-cursor select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #705cff;
+}
+
+.fieldset2 select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #705cff;
+}
+
 
 #voltar {
   display: flex;
@@ -226,12 +288,12 @@ fieldset {
 }
 
 .botao-voltar {
-    display: inline-block;
-    text-decoration: none;
-    padding: 8px 16px;
-    background-color: #dddddd;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #000000;
-  }
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #000000;
+}

@@ -6,11 +6,11 @@ Minicurso HTML/CSS Asa Norte -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Site feito para fins de estudo - Minicurso HTML/CSS">
-	<!-- branch gh-pages -->
-	<link rel="stylesheet" href="/site-teste/html-and-css/style-css.css" />
-    <!-- branch main -->
-	<!-- <link rel="stylesheet" href="/html-and-css/style-css.css" /> -->
+    <meta
+      name="description"
+      content="Site feito para fins de estudo - Minicurso HTML/CSS"
+    />
+    <link rel="stylesheet" href="../html-and-css/style-css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,7 @@ Minicurso HTML/CSS Asa Norte -->
             <a href="/site-teste/html-and-css/index.html">Site com CSS</a>
           </li>
 
-		  <li>
+          <li>
             <a href="/site-teste/planetas/index.html">Site dos planetas</a>
           </li>
         </ul>
@@ -46,7 +46,7 @@ Minicurso HTML/CSS Asa Norte -->
       </h1>
       <hr class="hr" />
       <div class="conteudo1">
-        <h2 id="titulo" class="titulo-centralizado"> Sobre </h2>
+        <h2 id="titulo" class="titulo-centralizado">Sobre</h2>
 
         <div class="texto-centralizado">
           <p>
@@ -72,7 +72,7 @@ Minicurso HTML/CSS Asa Norte -->
 
       <hr class="hr" />
       <div class="conteudo2">
-        <h2 id="titulo" class="titulo-centralizado"> Benefícios do CSS</h2>
+        <h2 id="titulo" class="titulo-centralizado">Benefícios do CSS</h2>
         <ul class="lista-centralizada">
           <li class="lista">Mais bonito.</li>
           <li class="lista">Mais interessante.</li>
@@ -84,7 +84,7 @@ Minicurso HTML/CSS Asa Norte -->
       <hr class="hr" />
 
       <!-- FORMULÁRIO -->
-      <h2 id="titulo" class="titulo-centralizado"> Formulário </h2>
+      <h2 id="titulo" class="titulo-centralizado">Formulário</h2>
       <div class="form-container">
         <form class="form">
           <h3>
@@ -124,7 +124,7 @@ Minicurso HTML/CSS Asa Norte -->
           <p>Não coloque seu número do cartão de verdade</p>
 
           <label for="mensagem" id="mensagem">Mensagem</label>
-		  <p>Digite uma mensagem qualquer, caso queira :D</p>
+          <p>Digite uma mensagem qualquer, caso queira :D</p>
           <textarea cols="70" rows="5" required class="input-padrao"></textarea>
 
           <fieldset class="fieldset1">
@@ -153,10 +153,13 @@ Minicurso HTML/CSS Asa Norte -->
 
           <fieldset class="fieldset2">
             <legend>Você é um ser diurno ou noturno?</legend>
-            <select>
-              <option>Diurno</option>
-              <option>Noturno</option>
-            </select>
+            <div class="conteudo-cursor">
+              <select>
+                <option>Diurno</option>
+                <option>Noturno</option>
+              </select>
+              <span class="cursor"></span>
+            </div>
           </fieldset>
           <label class="checkbox"
             ><input type="checkbox" checked />Isso foi legal?</label
