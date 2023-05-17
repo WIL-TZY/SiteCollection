@@ -183,7 +183,7 @@ textarea.input-padrao {
   cursor: pointer;
 }
 
-/* Hide the default checkbox */
+/* Escondendo a checkbox padrao */
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -197,7 +197,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Create a custom checkbox */
+/* Custom checkbox */
 input[type="checkbox"]::before {
   content: "";
   display: inline-block;
@@ -211,13 +211,13 @@ input[type="checkbox"]::before {
   transition: visibility 0s, opacity 0.2s ease-in-out;
 }
 
-/* Show the custom checkbox when checked */
+/* Mostrando a checkbox quando assinalada */
 input[type="checkbox"]:checked::before {
   visibility: visible;
   opacity: 1;
 }
 
-/* Style the label for the checkbox */
+/* Estilizando o label */
 label {
   color: #c9b8e0;
   cursor: pointer;
