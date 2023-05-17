@@ -1,0 +1,21 @@
+/* Global Styles */
+:root {
+    --color-primary: #c9b8e0;
+    --color-secondary: #705cff;
+    --color-link: #71ffbd;
+    --color-background: #0e0915;
+    --font-family: 'PixelFont', sans-serif;
+    --font-size: 40px;
+    --spacing: 20px;
+  }
+
+  @font-face {
+    font-family: 'PixelFont';
+    src: url(/fonts/PixelFont-Regular.woff);
+  }
+   body{
+        background-color: var(--color-background);
+        color: var(--color-primary);
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+   }
